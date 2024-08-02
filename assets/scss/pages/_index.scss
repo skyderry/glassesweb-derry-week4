@@ -1,3 +1,126 @@
-.index-title {
-  font-size: 100px;
+*
+,*:before 
+,*:after{
+	box-sizing: border-box;
+}
+
+body,html{
+    font-family:"Roboto", sans-serif , "Microsoft Jheng Hei";
+  	font-weight: 400;
+  	font-style: normal;
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+	display: inline-block;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+/* 容器設定 */
+
+.container{
+	max-width: 1320px;
+	padding: 0px 12px;
+	margin: 0 auto;
+}
+
+.title{
+	padding: 296px 0;
+	text-align: right;
+	color: #650300;
+}
+
+h1{
+	font-weight: bold;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.gap64{
+	gap:64px;
+}
+
+.flex-direction-column{
+	flex-direction: column;
+}
+
+.justifty-content-space-between{
+    justify-content: space-between;
+}
+
+.justifty-content-flex-end{
+	justify-content: flex-end;
+}
+
+.align-items-center{
+	align-items: center;
+}
+
+/* 字體大小，顏色 */
+
+.h1{
+	font-size: 64px;
+}
+
+.h2{
+	font-size: 48px;
+}
+
+.fz-1{
+	font-size: 36px;
+}
+
+.fz-2{
+	font-size: 24px;
+}
+
+.fz-3{
+	font-size: 20px;
+}
+
+.color-1{
+	color: #fbf2f2;
+}
+
+.color-2{
+	color: #000;
+}
+
+.color-3{
+	color: #AA0601;
+}
+
+.header a{
+	color: #fff;
+}
+
+/* 背景顏色，圖案 */
+
+.header{
+	background: #aa0601;
+	padding: 16px 0;
+}
+
+.title-bg{
+	background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: calc(100ch - 80px);
+
+}
+
+/* 連結樣式 */
+
+.button{
+	color: #fff;
+	background: #aa0601;
+	padding: 6px 12px;
 }
