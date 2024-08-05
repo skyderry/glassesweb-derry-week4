@@ -1,7 +1,13 @@
+@import './helper/variables.scss';
+@import './helper/mixin.scss';
+@import './helper/utils.scss';
+@import './helper/media.scss';
+
+
 @import './base/reset.scss';
 @import './base/base.scss';
 
-@import './helper/variables.scss';
+
 
 @import './layout/header.scss';
 @import './layout/footer.scss';

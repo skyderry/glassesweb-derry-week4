@@ -1,0 +1,24 @@
+@include pad{
+	.flex-direction-column-md{
+		flex-direction: column;
+	}
+    .align-items-center-md{
+		align-items: center;
+	}
+    .gap-24-md{
+        gap: 24px;
+    }
+}
+
+@include mobile-larger{
+	.px-sm-0{
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+@include mobile{
+    .gap-16-sm{
+        gap: 16px;
+    }
+}

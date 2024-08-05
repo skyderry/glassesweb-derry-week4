@@ -1,236 +1,169 @@
-
-//容器設定-通用
-.container{
-	max-width: 1320px;
-	margin: 0 auto;
-	padding-left: 12px;
-	padding-right: 12px;
-}
+@import url(https://fonts.google.com/?selected=Material+Icons);
 
 //section-1
-.banner{
+.banner-header{
 	background-image: url('/assets/images/home-header.png');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
 	height: calc(100ch - 80px);
+	@include pad{
+		background-image: url('/assets/images/home-header-sm.png');
+	}
 	.title{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: flex-end;
 		color: $secondary;
 		height: 100%;
 		&-h1{
 			font-weight: bold;
 			font-size: $fz-h1;
-				@media (max-width: 767px) {
-				}
+			@include mobile-larger{
+				font-size: $fz-4;
+			}
 		}
 		&-h3{
 			font-size: $fz-h3;
+			@include mobile-larger{
+				font-size: 16px;
+			}
 		}
 	}
-	.button-1{
-		color: #fff;
-		background: #aa0601;
-		padding: 6px 12px;
-		&:hover{
+}
+
+.serve-bg{
+	background-color: $bg-light;
+	padding-top: 80px;
+	padding-bottom: 56px;
+	color: $secondary;
+	text-align: center;
+	.serve-h2{
+		font-size: $fz-h2;
+		font-weight: bold;
+		margin-bottom: 12px;
+		@include mobile{
 			font-size: $fz-4;
 		}
 	}
-}
-
-@media (max-width: 997px){
-	.banner{
-		background-image: url('/assets/images/home-header-sm.png') ;
-	}
-}
-@media (max-width: 767px){
-	.fz-sm-h3{
-		font-size: $fz-4 ;
-	}
-	.fz-sm-h1{
-		font-size: $fz-h3 ;
-	}
-}
-
-.serve-banner{
-	background-color: $bg-light;
-	.serve{
-		padding-top: 80px;
-		padding-bottom: 80px;
-		&-h2{
-			font-size: $fz-h2;
+	.card{
+		width: calc(25% - 12px);
+		text-align: center;
+		margin-top: 12px;
+		margin-bottom: 12px;
+		@include pad{
+			width: 50%;
+		}
+		@include mobile{
+			width: 100%;
+		}
+		&-img{
+			width: 86px;
+			height: 86px;
+		}
+		&-h4{
+			font-size: $fz-4;
 			font-weight: bold;
-			color: $secondary;
-			text-align: center;
-			padding-bottom: 30px;
+			margin-top: 16px;
+			margin-bottom: 8px;
 		}
-		&-link{
-			justify-content: space-between;
-			.item{
-				width: calc(25% - 12px);
-				text-align: center;
-				&-img{
-					width: 30%;
-					height: auto;
-				}
-				&-h4{
-					font-size: $fz-4;
-					color: $secondary;
-					font-weight: bold;
-					padding-top: 24px;
-					padding-bottom: 8px;
-				}
-				&-p{
-					text-align: left;
-				}
-			}
-		}
-	}
-}
-
-@media (max-width:997px){
-	.serve-banner{
-		.serve-container-md{
-			padding-right: 36px;
-			padding-left: 36px;
-			.serve-link{
-				flex-wrap: wrap;
-				.item{
-					width: calc(50% - 12px);
-				}
-			}
-		}
-	}
-}
-
-@media (max-width:767px){
-	.serve-banner{
-		padding-top: 40px;
-		padding-bottom: 40px;
-		.serve-container-sm{
-			padding-right: 14px;
-			padding-left: 14px;
-			.serve-h2{
-				font-size: $fz-4;
-			}
-			.serve-link{
-				.item{
-					margin-top: 30px;
-					width: 100%;
-				}
-			}
+		&-p{
+			text-align: left;
 		}
 	}
 }
 
 .product{
-	padding-top: 80px;
-	padding-bottom: 80px;
-	.fz-h2{
+	text-align: center;
+	h2{
 	font-size: $fz-h2;
 	color: $secondary;
 	font-weight: bold;
-	text-align: center;
-	margin-bottom: 48px;
+	margin-bottom: 24px;
+	@include mobile{
+		font-size: $fz-4;
 	}
-	&-card{
-		display: flex;
-		justify-content: space-between;
-		.card{
-			width: calc(33.333% - 12px);
-			height: auto;
-			h3{
-				font-size: $fz-h2;
-				font-weight: bold;
-				color: $primary;
-				text-align: center;;
-			}
+	}
+	.card{
+		width: calc(33.333% - 12px);
+		height: auto;
+		@include pad{
+			width: calc(50% - 12px);
+			margin-top: 12px;
+			margin-bottom: 12px;
+		}
+		@include mobile{
+			width: 100%;
+		}
+		h3{
+			font-size: $fz-h2;
+			font-weight: bold;
+			color: $primary;
+			margin-top: 8px;
 		}
 	}
 }
 
-@media (max-width: 997px){
-	.product-card{
-		flex-direction: column;
-		align-items: center;
-		gap: 24px;
-		.card{
-			width: 50%;
+.joint-bg{
+	background-image: url('/assets/images/index-bg.png');
+	@include pad{
+		background-image: url('/assets/images/index-bg-sm.png');
+	}
+
+	h2{
+		font-size: $fz-h2;
+		color: $color-4;
+		text-align: center;
+		margin-bottom: 48px;
+	}
+
+	.card{
+		width: 50%;
+		@include pad{
+			width: 100%;
+		}
+		&-title{
+			font-size: $fz-h2;
+			background: #fff;
+			color: $primary;
+			font-weight: 900;
+			font-style: italic;
+			text-align: center;
+			padding-top: 8px;
+			padding-bottom: 8px;
 		}
 	}
 }
 
-@media (max-width: 767px){
-	.product{
-		.fz-h2{
+.recommend{
+	&-title{
+		text-align: center;
+		font-size: $fz-h2;
+		color: $secondary;
+		font-weight: bold;
+		margin-bottom: 48px;
+		@include mobile{
 			font-size: $fz-4;
 			margin-bottom: 24px;
 		}
-		&-card{
-			.card{
-				width: calc(100% - 12px);
-			}
+	}
+	&-card{
+		width: calc(25% - 12px);
+		border: 1px solid #DEE2E6;
+		box-shadow: #DEE2E6 0px 2px 6px ;
+		border-radius: 4px 4px 4px 4px;
+		@include pad{
+			width: calc(50% - 12px);
+		}
+		@include mobile{
+			width: 100%;
+		}
+		.card-pd{
+			padding: 16px;
+			height: calc(205px - 16px);
+		}
+		.card-name{
+			margin-bottom: 8px;
+			font-weight: 600;
+		}
+		.time{
+			color:#707070;
+			font-size: 14px;
 		}
 	}
 }
-
-.popular-banner{
-	background-image: url('/assets/images/index-bg.png');
-	background-position: center ;
-	background-size: cover;
-	background-repeat: no-repeat;
-	.popular{
-		padding-top: 80px;
-		padding-bottom: 80px;
-		h2{
-			font-size: $fz-h2;
-			color: $color-4;
-			text-align: center;
-			margin-bottom: 48px;
-		}
-		&-card{
-			display: flex;
-			align-items: center;
-			.fz-h2{
-				font-size: $fz-h2;
-				background: #fff;
-				color: $primary;
-				font-weight: bold;
-				font-style: italic;
-				text-align: center;
-				padding-top: 8px;
-				padding-bottom: 8px;
-			}
-		}
-	}
-}
-
-@media (max-width:997px){
-	.popular-card{
-		flex-direction: column;
-		gap: 24px;
-	}
-}
-
-.d-flex{
-    display: flex;
-}
-
-.flex-direction-column{
-	flex-direction: column;
-}
-
-.justifty-content-space-between{
-    justify-content: space-between;
-}
-
-.justifty-content-flex-end{
-	justify-content: flex-end;
-}
-
-.align-items-center{
-	align-items: center;
-}
+	

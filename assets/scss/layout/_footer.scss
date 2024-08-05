@@ -1,91 +1,66 @@
 .footer{
-    background: $primary;
-    &-container{
-        max-width: 1320px;
-        padding-left: 12px;
-        padding-right: 12px;
-        margin: 0 auto;
-        color: $color-4;
+    color: $color-4;
+    padding-top: 48px;
+    padding-bottom: 32px;
+    @include mobile-larger{
+        padding-top: 24px;
+        padding-bottom: 24px;
     }
     &-top{
-        display: flex;
-        justify-content: space-between;
-        padding-top: 48px;
         padding-bottom: 32px;
+        margin-bottom: 32px;
         border-bottom: 1px solid #fff;
-        .link{
-            display: flex;
-            justify-content: space-between;
-            gap: 45px;
-            margin-bottom: 36px;
-            &-item{
-                padding: 6px;
-            }
-        }
-        .social{
-            display: flex;
-            justify-content: space-between;
-            gap: 32px;
-            &-item{
-                width: 48px;
-                height: 48px;
-            }
-        }
-        .contact{
-            font-size: 36px;
-            a{
-                display: block;
-                gap: 8px;
-            }
-            .material-symbols-outlined{
-                font-size: 36px;
-                margin-right: 22px;
-            }
+        @include mobile-larger{
+            padding-bottom: 20px;
+            margin-bottom: 20px;
         }
     }
-    &-bottom{
-        display: flex;
-        justify-content: space-between;
-        padding-top: 32px;
-        padding-bottom: 32px;
-        .bottom-right{
-            display: flex;
-            justify-content: space-between;
+    .link{
+        margin-bottom: 36px;
+        gap: 48px;
+        @include mobile-larger{
+            display: none;
         }
     }
-}
 
-@media (max-width: 767px){
-    .footer-top{
-        padding-top: 24px;
-        padding-bottom: 20px;
-        .link{
-        display: none;
-        }
-        .contact{
-            gap:8px;
-            .material-symbols-outlined{
-                font-size: 18px;
-                margin-right: 10px;
-            }
-            a{
-                font-size: 16px;
-            }
-        }
-        .social{
-            &-item{
-                height: 24px;
-            }
+    .contact{
+        font-size: 36px;
+        @include mobile-larger{
+            font-size: $fz-4;
         }
     }
-    .footer-bottom{
-        flex-direction: column;
-        padding-top: 20px;
-        padding-bottom: 24px;
-        .bottom-right{
+
+    .material-icons-outlined{
+        font-size: 36px;
+        margin-right: 22px;
+        @include mobile-larger{
+            font-size: $fz-4;
+            margin-right: 10px;
+        }
+    }
+
+    .social-item{
+        width: 48px;
+        height: 48px;
+        margin-left: 32px;
+        @include mobile-larger{
+            width: 24px;
+            height: 24px;
+            margin-left: 8px;
+        }
+    }
+    
+    &-bottom{
+        @include mobile-larger{
             flex-direction: column;
             gap:8px;
-            margin-top: 8px;
+        }
+        .bottom-right{
+            gap: 48px;
+            @include mobile-larger{
+                flex-direction: column;
+                gap:8px
+            }
         }
     }
 }

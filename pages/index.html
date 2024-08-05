@@ -15,11 +15,12 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" />
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <section class="banner banner-sm-bg">
-      <div class="container title">
+    <section class="banner banner-header banner-sm-bg">
+      <div class="container title d-flex flex-direction-column align-items-flex-end justifty-content-center">
         <h3 class="title-h3 fz-sm-h3">Promise-Desert 2020 早春系列</h3>
         <h1 class="title-h1 fz-sm-h1">看得清，才能看得遠</h1>
         <div>
@@ -28,38 +29,38 @@
       </div>
     </section>
 
-    <section class="serve-banner">
-      <div class="serve container serve-container-md serve-container-sm">
+    <section class="serve-bg">
+      <div class="serve container">
         <h2 class="serve-h2">用專業的心，做專業的事</h2>
-        <ul class="serve-link d-flex" >
-          <li class="item">
-            <img class="item-img" src="/assets/images/home-section2-1.png" alt="price">
-            <h4 class="item-h4">單一價格</h4>
-            <p class="item-p">無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
-          </li>
-          <li class="item">
-            <img class="item-img" src="/assets/images/home-section2-2.png" alt="time">
-            <h4 class="item-h4">20 分鐘即可取件</h4>
-            <p class="item-p">為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快 20 分鐘即可完成。</p>
-          </li>
-          <li class="item">
-            <img class="item-img" src="/assets/images/home-section2-3.png" alt="serve">
-            <h4 class="item-h4">安心售後服務</h4>
-            <p class="item-p">我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
-          </li>
-          <li class="item">
-            <img class="item-img" src="/assets/images/home-sectioin2-4.png" alt="glasses">
-            <h4 class="item-h4">關於鏡片</h4>
-            <p class="item-p">使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
-          </li>
-        </ul>
+          <ul class="serve-link d-flex flex-wrap row" >
+            <li class="column card">
+              <img class="card-img" src="/assets/images/home-section2-1.png" alt="price">
+              <h4 class="card-h4">單一價格</h4>
+              <p class="card-p">無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
+            </li>
+            <li class="card column">
+              <img class="card-img" src="/assets/images/home-section2-2.png" alt="time">
+              <h4 class="card-h4">20 分鐘即可取件</h4>
+              <p class="card-p">為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快 20 分鐘即可完成。</p>
+            </li>
+            <li class="card column">
+              <img class="card-img" src="/assets/images/home-section2-3.png" alt="serve">
+              <h4 class="card-h4">安心售後服務</h4>
+              <p class="card-p">我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
+            </li>
+            <li class="card column">
+              <img class="card-img" src="/assets/images/home-sectioin2-4.png" alt="glasses">
+              <h4 class="card-h4">關於鏡片</h4>
+              <p class="card-p">使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
+            </li>
+          </ul>
       </div>
     </section>
 
-    <section>
+    <section class="section-py-80 section-py-40-sm">
       <div class="container product">
-        <h2 class="fz-h2 fz-h2-sm">經典系列鏡框</h2>
-        <ul class="product-card">
+        <h2>經典系列鏡框</h2>
+        <ul class="product-list d-flex justifty-content-space-between flex-direction-column-md align-items-center-md">
           <li class="card">
             <img src="/assets/images/home-section3-1.png" alt="OPTICAL">
             <h3 class="">OPTICAL</h3>
@@ -76,17 +77,71 @@
       </div>
     </section>
 
-    <section class="popular-banner">
-      <div class="container popular popular-md popular-sm">
+    <section class="joint-bg banner section-py-80 section-py-40">
+      <div class="container">
         <h2>聯名設計鏡框</h2>
-        <ul class="popular-card">
+        <ul class="joint-list d-flex flex-direction-column-md gap-24-md">
           <li class="card">
-            <img src="/assets/images/home-section4-1.png" alt="DOUBLE A+">
-            <h3 class="fz-h2">DOUBLE A+</h3>
+            <picture>
+              <source srcset="../assets/images/home-section4-1-sm.png" media="(max-width:576px)"/>
+              <img src="/assets/images/home-section4-1.png" alt="YOUTH">
+            </picture>
+            <h3 class="card-title">DOUBLE A+</h3>
           </li>
-          <li>
-            <img src="/assets/images/home-section4-2.png" alt="YOUTH">
-            <h3 class="fz-h2">YOUTH</h3>
+          <li class="card">
+            <picture>
+              <source srcset="../assets/images/home-section4-2-sm.png" media="(max-width:576px)"/>
+              <img src="/assets/images/home-section4-2.png" alt="YOUTH">
+            </picture>
+            <h3 class="card-title">YOUTH</h3>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section-py-80 section-py-40-sm">
+      <div class="container recommend">
+        <h2 class="recommend-title">顧客推薦</h2>
+        <ul class="recommend-list d-flex justifty-content-space-between flex-wrap gap-24-md gap-16-sm">
+          <li class="recommend-card">
+            <img src="/assets/images/home-section5-1.png" alt="">
+            <div class="card-pd d-flex flex-direction-column justifty-content-space-between">
+              <div class="card-content">
+                <h4 class="card-name">Jessy</h4>
+                <p>眼鏡品質優良，下次還會想來這邊購買！</p>
+              </div>
+              <p class="time">2021/06/20</p>
+            </div>
+          </li>
+          <li class="recommend-card">
+            <img src="/assets/images/home-section5-2.png" alt="">
+            <div class="card-pd d-flex flex-direction-column justifty-content-space-between">
+              <div class="card-content">
+                <h4 class="card-name">凱倫</h4>
+                <p>做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！</p>
+              </div>
+              <p class="time">2021/04/18</p>
+            </div>
+          </li>
+          <li class="recommend-card">
+            <img src="/assets/images/home-section5-3.png" alt="">
+            <div class="card-pd d-flex flex-direction-column justifty-content-space-between">
+              <div class="card-content">
+                <h4 class="card-name">悠悠</h4>
+                <p>謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！</p>
+              </div>
+              <p class="time">2020/12/25</p>
+            </div>
+          </li>
+          <li class="recommend-card">
+            <img src="/assets/images/home-section5-4.png" alt="">
+            <div class="card-pd d-flex flex-direction-column justifty-content-space-between">
+              <div class="card-content">
+                <h4 class="card-name">Kyuan</h4>
+                <p>服務很好，品質沒有任何問題，非常喜歡。</p>
+              </div>
+              <p class="time">2020/10/31</p>
+            </div>
           </li>
         </ul>
       </div>

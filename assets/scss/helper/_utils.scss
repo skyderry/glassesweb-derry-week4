@@ -1,0 +1,74 @@
+.container{
+	max-width: 1320px;
+	margin: 0 auto;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+.row{
+	margin-left: -12px;
+	margin-right: -12px;
+}
+
+.column{
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+.bg-primary{ 
+	background-color: $primary;
+}
+
+.banner{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.button-1{
+	color: #fff;
+	background: #aa0601;
+	padding: 6px 12px;
+	&:hover{
+		font-size: $fz-4;
+	}
+}
+
+.d-flex{
+    display: flex;
+}
+
+.flex-wrap{
+	flex-wrap: wrap;
+}
+
+.flex-direction-column{
+	flex-direction: column;
+}
+
+.justifty-content-center{
+	justify-content: center;
+}
+
+.justifty-content-space-between{
+    justify-content: space-between;
+}
+
+.justifty-content-flex-end{
+	justify-content: flex-end;
+}
+
+.align-items-center{
+	align-items: center;
+}
+
+.align-items-flex-end{
+	align-items: flex-end;
+}
+
+.section-py-80{
+	padding: 80px 0;
+	@include mobile{
+		padding: 40px 0;
+	}
+}
