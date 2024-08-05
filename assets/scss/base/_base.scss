@@ -7,9 +7,9 @@
 	box-sizing: border-box;
 }
 
-body,html{
-    font-family:"Roboto", sans-serif , "Microsoft JhengHei";
-    line-height: 1.5;
+body{
+	font-family: "Noto Sans TC", "Roboto", sans-serif;
+	line-height: 1.5;
 }
 
 a{
@@ -22,4 +22,9 @@ img {
 	max-width: 100%;
 	height: auto;
 	vertical-align: middle;
+	object-fit: cover;
+}
+
+.d-flex{
+    display: flex;
 }
