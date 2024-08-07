@@ -51,6 +51,8 @@
     }
     
     &-bottom{
+        font-size: 14px;
+        font-weight: 300;
         @include mobile-larger{
             flex-direction: column;
             gap:8px;

@@ -60,7 +60,7 @@
     <section class="section-py-80 section-py-40-sm">
       <div class="container product">
         <h2>經典系列鏡框</h2>
-        <ul class="product-list d-flex justifty-content-space-between flex-direction-column-md align-items-center-md">
+        <ul class="product-list d-flex flex-direction-column-md align-items-center-md">
           <li class="card">
             <img src="/assets/images/home-section3-1.png" alt="OPTICAL">
             <h3 class="">OPTICAL</h3>
@@ -105,7 +105,7 @@
         <ul class="recommend-list d-flex justifty-content-space-between flex-wrap gap-24-md gap-16-sm">
           <li class="recommend-card">
             <img src="/assets/images/home-section5-1.png" alt="">
-            <div class="card-pd d-flex flex-direction-column justifty-content-space-between">
+            <div class="card-pd d-flex flex-direction-column">
               <div class="card-content">
                 <h4 class="card-name">Jessy</h4>
                 <p>眼鏡品質優良，下次還會想來這邊購買！</p>
@@ -115,7 +115,7 @@
           </li>
           <li class="recommend-card">
             <img src="/assets/images/home-section5-2.png" alt="">
-            <div class="card-pd d-flex flex-direction-column justifty-content-space-between">
+            <div class="card-pd d-flex flex-direction-column">
               <div class="card-content">
                 <h4 class="card-name">凱倫</h4>
                 <p>做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！</p>
@@ -125,7 +125,7 @@
           </li>
           <li class="recommend-card">
             <img src="/assets/images/home-section5-3.png" alt="">
-            <div class="card-pd d-flex flex-direction-column justifty-content-space-between">
+            <div class="card-pd d-flex flex-direction-column">
               <div class="card-content">
                 <h4 class="card-name">悠悠</h4>
                 <p>謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！</p>
@@ -135,7 +135,7 @@
           </li>
           <li class="recommend-card">
             <img src="/assets/images/home-section5-4.png" alt="">
-            <div class="card-pd d-flex flex-direction-column justifty-content-space-between">
+            <div class="card-pd d-flex flex-direction-column">
               <div class="card-content">
                 <h4 class="card-name">Kyuan</h4>
                 <p>服務很好，品質沒有任何問題，非常喜歡。</p>
@@ -147,7 +147,37 @@
       </div>
     </section>
 
-    <h1>我是內容</h1>
+    <section class="section-py-80 section-py-40-sm bg-secondary">
+      <div class="contact container">
+        <h2 class="contact-title">聯絡我們</h2>
+        <p class="contact-p">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
+        <form action="#">
+          <ul class="contact-form">
+            <li>
+              <label class="contact-label" for="name">姓名</label>
+              <input id="name" type="text" placeholder="陳小明" name="name" class="contact-input">
+            </li>
+            <li>
+              <label class="contact-label" for="contact">連絡電話</label>
+              <input id="contact" type="text" placeholder="0987654321" name="contact" class="contact-input">
+            </li>
+            <li>
+              <label class="contact-label" for="mail">電子郵件</label>
+              <input id="mail" type="text" placeholder="example@email.com" name="mail" class="contact-input">
+            </li>
+            <li>
+              <label class="contact-label" for="feedback">意見反應</label>
+              <textarea id="feedback" type="text" placeholder="請輸入您的意見" name="feedback" class="contact-input" rows="8"></textarea>
+            </li>
+            <li>
+              <input id="agree" class="" type="checkbox" value="agree" name="agree">
+              <label class="agree-label" for="agree">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+            </li>
+          </ul>
+          <button type="submit" class="button-2">確認送出</button>
+        </form>
+      </div>
+    </section>
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>

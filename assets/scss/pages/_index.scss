@@ -4,6 +4,7 @@
 .banner-header{
 	background-image: url('/assets/images/home-header.png');
 	height: calc(100ch - 80px);
+	background-position: left;
 	@include pad{
 		background-image: url('/assets/images/home-header-sm.png');
 	}
@@ -76,19 +77,21 @@
 	margin-bottom: 24px;
 	@include mobile{
 		font-size: $fz-4;
+		}
 	}
+	&-list{
+		gap: 24px;
 	}
 	.card{
-		width: calc(33.333% - 12px);
-		height: auto;
 		@include pad{
 			width: calc(50% - 12px);
 			margin-top: 12px;
 			margin-bottom: 12px;
 		}
 		@include mobile{
-			width: 100%;
+			width: calc(100% - 12px);
 		}
+		
 		h3{
 			font-size: $fz-h2;
 			font-weight: bold;
@@ -152,18 +155,87 @@
 		@include mobile{
 			width: 100%;
 		}
+
 		.card-pd{
 			padding: 16px;
-			height: calc(205px - 16px);
+			height: 100%;
 		}
+
 		.card-name{
 			margin-bottom: 8px;
 			font-weight: 600;
 		}
+
+		.card-content{
+			margin-bottom: 72px;
+		}
+
 		.time{
+			
 			color:#707070;
 			font-size: 14px;
 		}
+	}
+}
+
+.contact{
+	max-width: 636px;
+	&-title{
+		text-align: center;
+		font-size: $fz-h2;
+		color: $secondary;
+		font-weight: 800;
+		margin-bottom: 48px;
+		@include mobile{
+			font-size: $fz-4;
+			margin-bottom: 24px;
+		}
+	}
+	&-p{
+		font-size: $fz-5;
+		margin-bottom: 24px;
+		@include mobile{
+			font-size: 16px;
+		}
+	}
+
+	&-form{
+		margin-bottom: 48px;
+		@include mobile{
+			margin-bottom: 24px;
+		}
+	}
+	&-label{
+		display: block;
+		margin-bottom: 8px;
+	}
+	&-input{
+		border: 1px solid #000;
+		display: block;
+		margin-bottom: 8px;
+		width: 100%;
+		background: $bg-light;
+		padding: 6px 12px;
+	}
+	&-input-2{
+		border: 1px solid #000;
+		width: 100%;
+		background: $bg-light;
+		padding: 6px 12px;
+		margin-bottom: 16px;
+	}
+	.button-2{
+		display: block;
+		max-width: 416px;
+		padding: 16px 172px;
+		background: $primary;
+		color: $color-4;
+		margin: 0 auto;
+		border: none;
+		cursor: pointer;
+	}
+	.button-2:hover{
+		background: #650300;
 	}
 }
 	
