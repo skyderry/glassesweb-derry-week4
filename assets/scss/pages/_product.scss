@@ -1,0 +1,85 @@
+.link{
+    width: 100%;
+    @include pad{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    &-item{
+        border: 1px solid #DCDCDC;
+        width: 33.3333%;
+        text-align: center;
+        .item-1{
+            border-bottom: 8px solid $primary;
+        }
+        a{
+            width: 100%;
+            padding-top: 24px;
+            padding-bottom: 16px;
+            color: $color-5;
+            font-size: $fz-h3;
+            font-weight: $text-medium;
+            @include pad{
+                padding-top: 16px;
+                padding-bottom: 8px;
+                font-size: $fz-5;
+            }
+        }
+        a:hover{
+            border-bottom: 8px solid $primary;
+        }
+        a:active{
+            border-bottom: 8px solid $primary;
+        }
+    }
+}
+
+.banner-card{
+    width: 50%;
+    height: auto;
+}
+
+.product{
+    .title{
+        font-size: 42px;   
+        font-weight: $text-medium;
+        text-align: center;
+        @include mobile{
+            font-size: $fz-h3;
+        }
+    }
+    .title-p{
+        font-size: $fz-h3;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+    .card-title{
+        font-size: $fz-4;
+        color: $color-5;
+    }
+    .card-price{
+        font-size: $fz-4;
+        color: $primary;
+        font-weight: $text-medium;
+    }
+    .color-card{
+        width: 24px;
+        height: 24px;
+    }
+    .product-color-1{
+        background-color: #5F3E2D;
+        border-radius: 4px;
+    }
+    .product-color-2{
+        background-color: #B75929;
+        border-radius: 4px;
+    }
+    .card-sm-d-none{
+        @include mobile{
+            display: none;
+        }
+    }
+}
+
+.page{
+    margin-bottom: 80px;
+}

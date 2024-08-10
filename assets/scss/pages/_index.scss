@@ -12,7 +12,7 @@
 		color: $secondary;
 		height: 100%;
 		&-h1{
-			font-weight: bold;
+			font-weight: $text-bold;
 			font-size: $fz-h1;
 			@include mobile-larger{
 				font-size: $fz-4;
@@ -29,13 +29,11 @@
 
 .serve-bg{
 	background-color: $bg-light;
-	padding-top: 80px;
-	padding-bottom: 56px;
 	color: $secondary;
 	text-align: center;
 	.serve-h2{
 		font-size: $fz-h2;
-		font-weight: bold;
+		font-weight: $text-bold;
 		margin-bottom: 12px;
 		@include mobile{
 			font-size: $fz-4;
@@ -58,7 +56,7 @@
 		}
 		&-h4{
 			font-size: $fz-4;
-			font-weight: bold;
+			font-weight: $text-bold;
 			margin-top: 16px;
 			margin-bottom: 8px;
 		}
@@ -68,12 +66,12 @@
 	}
 }
 
-.product{
+.classical{
 	text-align: center;
 	h2{
 	font-size: $fz-h2;
 	color: $secondary;
-	font-weight: bold;
+	font-weight: $text-bold;
 	margin-bottom: 24px;
 	@include mobile{
 		font-size: $fz-4;
@@ -94,7 +92,7 @@
 		
 		h3{
 			font-size: $fz-h2;
-			font-weight: bold;
+			font-weight: $text-bold;
 			color: $primary;
 			margin-top: 8px;
 		}
@@ -123,7 +121,7 @@
 			font-size: $fz-h2;
 			background: #fff;
 			color: $primary;
-			font-weight: 900;
+			font-weight: $text-black;
 			font-style: italic;
 			text-align: center;
 			padding-top: 8px;
@@ -137,7 +135,7 @@
 		text-align: center;
 		font-size: $fz-h2;
 		color: $secondary;
-		font-weight: bold;
+		font-weight: $text-bold;
 		margin-bottom: 48px;
 		@include mobile{
 			font-size: $fz-4;
@@ -179,7 +177,9 @@
 }
 
 .contact{
-	max-width: 636px;
+	max-width: 648px;
+	padding-left: 12px;
+	padding-right: 12px;
 	&-title{
 		text-align: center;
 		font-size: $fz-h2;
@@ -233,6 +233,10 @@
 		margin: 0 auto;
 		border: none;
 		cursor: pointer;
+		@include mobile{
+			padding-left: 142px;
+			padding-right: 142px;
+		}
 	}
 	.button-2:hover{
 		background: #650300;
