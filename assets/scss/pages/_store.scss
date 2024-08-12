@@ -1,0 +1,52 @@
+.store{
+    .h1{
+        font-size: $fz-h2;
+        font-weight: $text-bold;
+        padding-left: 16px;
+        border-left: 8px solid #9F1213;
+        margin-bottom: 32px;
+        @include mobile{
+            font-size: $fz-4;
+        }
+    }
+    &-form{
+        margin-bottom: 40px;
+    }
+
+    &-label{
+        font-size: $fz-4;
+        margin-right: 16px;
+        @include mobile{
+            font-size: 16px;
+        }
+    }
+    &-select{
+        border: 1px solid #CED4DA;
+        font-size: 18px;
+        width: 304px;
+    }
+    .card-title{
+        padding-left: 24px;
+        font-size: $fz-4;
+        border:1px solid #00000020;
+    }
+
+    .card-tact{
+        border: 1px solid #00000020;
+        font-size: $fz-5;
+        a{
+            color:#000;
+        }
+    }
+
+    .btn-3{
+        display: block;
+        background: #000;
+        text-align: center;
+        font-size: 19px;
+        color: $color-4;
+    }
+    .map{
+        height: 100%;
+    }
+}
