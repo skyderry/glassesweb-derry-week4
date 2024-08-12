@@ -13,19 +13,53 @@ $columns-num:12;
 		padding-top: 1px * $i;
 		padding-bottom: 1px * $i;
 	}
+	.px-#{$i}{
+		padding-left: 1px * $i;
+		padding-right: 1px * $i;
+	}
+	.gap-#{$i}{
+		gap: 1px * $i;
+	}
+	.row-gap-#{$i}{
+		row-gap: 1px * $i;
+	}
 }
+
+@include pad{
+	@for $i from 1 through 100{
+		.gap-md-#{$i}{
+			row-gap: 1px * $i;
+		}
+		.row-gap-md-#{$i}{
+			row-gap: 1px * $i;
+		}
+	}
+}
+
 @include mobile{
 	@for $i from 1 through 100{
 		.py-sm-#{$i}{
 			padding-top: 1px * $i;
 			padding-bottom: 1px * $i;
 		}
+		.gap-sm-#{$i}{
+			row-gap: 1px * $i;
+		}
+		.row-gap-sm-#{$i}{
+			row-gap: 1px * $i;
+		}
+		.my-sm-#{$i}{
+			margin-top: 1px * $i;
+			margin-bottom: 1px * $i;
+		}
 	}
-}
 
-.btn-3{
-	border: 1px solid #000;
-	background: #fff;
+	@for $i from 0 through 100{
+		.px-sm-#{$i}{
+			padding-left: 1px * $i;
+			padding-right: 1px * $i;
+		}
+	}
 }
 
 .row{
@@ -40,49 +74,6 @@ $columns-num:12;
 	padding-right: $gap/ 2;
 }
 
-@for $i from 1 through 100{
-	.gap-#{$i}{
-		gap: 1px * $i;
-	}
-}
-
-@include pad{
-	@for $i from 1 through 100{
-		.gap-md-#{$i}{
-			row-gap: 1px * $i;
-		}
-	}
-}
-
-@include mobile{
-	@for $i from 1 through 100{
-		.gap-sm-#{$i}{
-			row-gap: 1px * $i;
-		}
-	}
-}
-
-@for $i from 1 through 100{
-	.row-gap-#{$i}{
-		row-gap: 1px * $i;
-	}
-}
-
-@include pad{
-	@for $i from 1 through 100{
-		.row-gap-md-#{$i}{
-			row-gap: 1px * $i;
-		}
-	}
-}
-
-@include mobile{
-	@for $i from 1 through 100{
-		.row-gap-sm-#{$i}{
-			row-gap: 1px * $i;
-		}
-	}
-}
 
 @for $i from 1 through $columns-num{
 	.col-#{$i}{
@@ -109,5 +100,14 @@ $columns-num:12;
 			padding-left: $gap/2;
 			padding-right:  $gap/2;
 		}
+	}
+}
+
+@include pad{
+	.flex-direction-column-md{
+		flex-direction: column;
+	}
+    .align-items-center-md{
+		align-items: center;
 	}
 }

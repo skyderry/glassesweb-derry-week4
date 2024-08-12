@@ -39,6 +39,10 @@
 }
 
 .product{
+    margin-bottom: 80px;
+    @include mobile{
+        margin-bottom: 40px;
+    }
     .title{
         font-size: 42px;   
         font-weight: $text-medium;
@@ -64,14 +68,13 @@
     .color-card{
         width: 24px;
         height: 24px;
+        border-radius: 4px;
     }
     .product-color-1{
         background-color: #5F3E2D;
-        border-radius: 4px;
     }
     .product-color-2{
         background-color: #B75929;
-        border-radius: 4px;
     }
     .card-sm-d-none{
         @include mobile{
@@ -81,5 +84,37 @@
 }
 
 .page{
-    margin-bottom: 80px;
+    li+li{
+        margin-left: -1px;
+    }
+
+    &-item{
+        border:1px solid #555555;
+        a:hover{
+            background: #000;
+            color:#fff;
+        }
+        .text-davy-gray{
+            color:#555555;
+        }
+        .text-white{
+            color:#fff;
+        }
+    }
+    .bg-gray95{
+        background: #f2f2f2;
+    }
+
+    .bg-black{
+        background: #000;
+    }
+    
+    .fz-19{
+        font-size: 19px;
+    }
+
+    .fz-18{
+        font-size: 18px;
+    }
+
 }
