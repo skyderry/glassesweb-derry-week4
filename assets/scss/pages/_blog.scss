@@ -1,0 +1,74 @@
+@import url(https://fonts.google.com/?selected=Material+Icons);
+
+.nav-banner{
+    background: #650300;
+    nav{
+        font-size: $fz-5;
+    }
+    ul{
+        @include mobile{
+            width: 100%;
+        }
+    }
+}
+
+.blog{
+    &-title{
+        font-size: $fz-h2;
+        font-weight: $text-bold;
+        padding-left: 16px;
+        border-left: 8px solid #9F1213;
+        margin-bottom: 32px;
+        @include mobile{
+            font-size: $fz-4;
+        }
+    }
+    .btn-4{
+        color: #650300;
+        &:hover{
+            color:#000;
+        }
+        @include pad{
+            color:#000;
+            font-weight: $text-medium;
+        }
+    }
+
+    li{
+        max-height: 400px;
+    }
+    .blog-img{
+        margin-right: 24px;
+        max-width: 50%;
+        @include mobile{
+            max-width: 100%;
+            margin-right: 0;
+        }
+    }
+    .card-title{
+        color:#650300;
+    }
+    .day-title{
+        font-weight: $text-medium;
+    }
+}
+
+.valentine{
+    .hashtag{
+        color: $primary;
+        font-weight: $text-bold;
+    }
+    .share{
+        
+        a{
+            width: 24px;
+        }
+    }
+    .pages{
+        color:#000;
+        font-weight: $text-regular;
+    }
+    .pages-container{
+        border-top: 1px solid #707070;
+    }
+}

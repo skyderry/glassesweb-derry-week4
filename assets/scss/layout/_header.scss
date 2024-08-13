@@ -31,16 +31,21 @@
 		@include mobile-larger{
 			flex-wrap: wrap;
 			width: 100%;
+			gap:0;
+			font-size: 16px;
 		}
 		&-item{
 			@include mobile-larger{
 				width: 50%;
 				border: 1px solid #fff;
 				text-align: center;
+				padding-top: 12px;
+				padding-bottom: 12px;
 			}
 		}
 		&-item a{
-			padding: 8px 32px;
+			padding-top: 5px;
+			padding-bottom: 5px;
 			@include mobile-larger{
 				padding-left: 0;
 				padding-right: 0;

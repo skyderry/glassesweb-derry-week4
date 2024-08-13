@@ -6,3 +6,31 @@
 		font-size: $fz-4;
 	}
 }
+
+.page{
+    li+li{
+        margin-left: -1px;
+    }
+
+    &-item{
+        border:1px solid #555555;
+        a:hover{
+            background: #000;
+            color:#fff;
+        }
+        .text-davy-gray{
+            color:#555555;
+        }
+        .text-white{
+            color:#fff;
+        }
+    }
+    .bg-gray95{
+        background: #f2f2f2;
+    }
+
+    .bg-black{
+        background: #000;
+    }
+
+}

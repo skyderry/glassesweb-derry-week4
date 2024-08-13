@@ -49,4 +49,14 @@
     .map{
         height: 100%;
     }
+    .row-md{
+        @include pad{
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -12px;
+            margin-right: -12px;
+            justify-content: center;
+            align-items: center;
+        }
+	}
 }
