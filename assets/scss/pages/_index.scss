@@ -40,16 +40,9 @@
 		}
 	}
 	.card{
-		width: calc(25% - 12px);
 		text-align: center;
 		margin-top: 12px;
 		margin-bottom: 12px;
-		@include pad{
-			width: 50%;
-		}
-		@include mobile{
-			width: 100%;
-		}
 		&-img{
 			width: 86px;
 			height: 86px;

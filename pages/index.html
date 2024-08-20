@@ -33,22 +33,22 @@
       <div class="serve container py-80 py-sm-40">
         <h2 class="serve-h2">用專業的心，做專業的事</h2>
           <ul class="serve-link d-flex flex-wrap row" >
-            <li class="column card">
+            <li class="col-3 col-md-6 col-sm-12 card">
               <img class="card-img" src="/assets/images/home-section2-1.png" alt="price">
               <h4 class="card-h4">單一價格</h4>
               <p class="card-p">無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
             </li>
-            <li class="card column">
+            <li class="col-3 col-md-6 col-sm-12 card">
               <img class="card-img" src="/assets/images/home-section2-2.png" alt="time">
               <h4 class="card-h4">20 分鐘即可取件</h4>
               <p class="card-p">為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快 20 分鐘即可完成。</p>
             </li>
-            <li class="card column">
+            <li class="card col-3 col-md-6 col-sm-12">
               <img class="card-img" src="/assets/images/home-section2-3.png" alt="serve">
               <h4 class="card-h4">安心售後服務</h4>
               <p class="card-p">我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
             </li>
-            <li class="card column">
+            <li class="card col-3 col-md-6 col-sm-12">
               <img class="card-img" src="/assets/images/home-sectioin2-4.png" alt="glasses">
               <h4 class="card-h4">關於鏡片</h4>
               <p class="card-p">使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
@@ -110,7 +110,7 @@
                 <h4 class="card-name">Jessy</h4>
                 <p>眼鏡品質優良，下次還會想來這邊購買！</p>
               </div>
-              <p class="time">2021/06/20</p>
+              <time datetime="2021-06-20" class="time">2021/06/20</time>
             </div>
           </li>
           <li class="recommend-card">
@@ -120,7 +120,7 @@
                 <h4 class="card-name">凱倫</h4>
                 <p>做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！</p>
               </div>
-              <p class="time">2021/04/18</p>
+              <time datetime="2021-04-18" class="time">2021/04/18</time>
             </div>
           </li>
           <li class="recommend-card">
@@ -130,7 +130,7 @@
                 <h4 class="card-name">悠悠</h4>
                 <p>謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！</p>
               </div>
-              <p class="time">2020/12/25</p>
+              <time datetime="2020-12-25" class="time">2020/12/25</time>
             </div>
           </li>
           <li class="recommend-card">
@@ -140,7 +140,7 @@
                 <h4 class="card-name">Kyuan</h4>
                 <p>服務很好，品質沒有任何問題，非常喜歡。</p>
               </div>
-              <p class="time">2020/10/31</p>
+              <time datetime="2020-10-31" class="time">2020/10/31</time>
             </div>
           </li>
         </ul>
@@ -152,28 +152,28 @@
         <h2 class="contact-title">聯絡我們</h2>
         <p class="contact-p">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
         <form action="#">
-          <ul class="contact-form">
-            <li>
+          <div class="contact-form">
+            <div>
               <label class="contact-label" for="name">姓名</label>
               <input id="name" type="text" placeholder="陳小明" name="name" class="contact-input">
-            </li>
-            <li>
+            </div>
+            <div>
               <label class="contact-label" for="contact">連絡電話</label>
-              <input id="contact" type="text" placeholder="0987654321" name="contact" class="contact-input">
-            </li>
-            <li>
+              <input id="contact" type="tel" placeholder="0987654321" name="contact" class="contact-input">
+            </div>
+            <div>
               <label class="contact-label" for="mail">電子郵件</label>
-              <input id="mail" type="text" placeholder="example@email.com" name="mail" class="contact-input">
-            </li>
-            <li>
+              <input id="mail" type="email" placeholder="example@email.com" name="mail" class="contact-input">
+            </div>
+            <div>
               <label class="contact-label" for="feedback">意見反應</label>
               <textarea id="feedback" type="text" placeholder="請輸入您的意見" name="feedback" class="contact-input" rows="8"></textarea>
-            </li>
-            <li>
+            </div>
+            <div>
               <input id="agree" class="" type="checkbox" value="agree" name="agree">
               <label class="agree-label" for="agree">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
-            </li>
-          </ul>
+            </div>
+          </div>
           <button type="submit" class="button-2">確認送出</button>
         </form>
       </div>

@@ -55,7 +55,25 @@ $columns-num:12;
 	}
 }
 
+@for $i from 1 through $columns-num{
+	.col-#{$i}{
+		width: 100% * ($i / $columns-num);
+		padding-left: $gap/ 2;
+		padding-right:  $gap/ 2;
+	}
+}
+
 @include pad{
+	.flex-direction-column-md{
+		flex-direction: column;
+	}
+    .align-items-center-md{
+		align-items: center;
+	}
+	.d-none-md{
+		display: none;
+	}
+
 	@for $i from 1 through 100{
 		.gap-md-#{$i}{
 			row-gap: 1px * $i;
@@ -71,6 +89,14 @@ $columns-num:12;
 		}
 		.mb-md-#{$i}{
 			margin-bottom: 1px * $i;
+		}
+	}
+
+	@for $i from 1 through $columns-num{
+		.col-md-#{$i}{
+			width: 100% * ($i / $columns-num);
+			padding-left: $gap/ 2;
+			padding-right:  $gap/ 2;
 		}
 	}
 }
@@ -123,6 +149,14 @@ $columns-num:12;
 			gap: 1px * $i;
 		}
 	}
+
+	@for $i from 1 through $columns-num{
+		.col-sm-#{$i}{
+			width: 100% * ($i / $columns-num);
+			padding-left: $gap/2;
+			padding-right:  $gap/2;
+		}
+	}
 }
 
 .row{
@@ -135,45 +169,4 @@ $columns-num:12;
 .column{
 	padding-left: $gap/ 2;
 	padding-right: $gap/ 2;
-}
-
-
-@for $i from 1 through $columns-num{
-	.col-#{$i}{
-		width: 100% * ($i / $columns-num);
-		padding-left: $gap/ 2;
-		padding-right:  $gap/ 2;
-	}
-}
-
-@include pad{
-	@for $i from 1 through $columns-num{
-		.col-md-#{$i}{
-			width: 100% * ($i / $columns-num);
-			padding-left: $gap/ 2;
-			padding-right:  $gap/ 2;
-		}
-	}
-}
-
-@include mobile{
-	@for $i from 1 through $columns-num{
-		.col-sm-#{$i}{
-			width: 100% * ($i / $columns-num);
-			padding-left: $gap/2;
-			padding-right:  $gap/2;
-		}
-	}
-}
-
-@include pad{
-	.flex-direction-column-md{
-		flex-direction: column;
-	}
-    .align-items-center-md{
-		align-items: center;
-	}
-	.d-none-md{
-		display: none;
-	}
 }

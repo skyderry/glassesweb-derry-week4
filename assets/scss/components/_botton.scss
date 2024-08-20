@@ -8,6 +8,8 @@
 }
 
 .page{
+    @include mobile{
+    }
     li+li{
         margin-left: -1px;
     }

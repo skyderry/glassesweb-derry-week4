@@ -23,13 +23,6 @@
         }
     }
 
-    .contact{
-        font-size: 36px;
-        @include mobile-larger{
-            font-size: $fz-4;
-        }
-    }
-
     .material-icons-outlined{
         font-size: 36px;
         margin-right: 22px;
