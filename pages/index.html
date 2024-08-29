@@ -16,11 +16,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <%- include('./layout/header'); -%>
     <section class="banner banner-header banner-sm-bg">
-      <div class="container title d-flex flex-direction-column align-items-flex-end justify-content-center">
+      <div class="container title d-flex flex-direction-column align-items-flex-end justify-content-center" data-aos="fade-left">
         <h3 class="title-h3 fz-sm-h3">Promise-Desert 2020 早春系列</h3>
         <h1 class="title-h1 fz-sm-h1">看得清，才能看得遠</h1>
         <div>
@@ -32,7 +33,7 @@
     <section class="serve-bg">
       <div class="serve container py-80 py-sm-40">
         <h2 class="serve-h2">用專業的心，做專業的事</h2>
-          <ul class="serve-link d-flex flex-wrap row" >
+          <ul class="serve-link d-flex flex-wrap row" data-aos="fade-down" >
             <li class="col-3 col-md-6 col-sm-12 card">
               <img class="card-img" src="/assets/images/home-section2-1.png" alt="price">
               <h4 class="card-h4">單一價格</h4>
@@ -61,15 +62,15 @@
       <div class="container classical py-80 py-sm-40">
         <h2>經典系列鏡框</h2>
         <ul class="classical-list d-flex flex-direction-column-md align-items-center-md">
-          <li class="card">
+          <li class="card" data-aos="zoom-in-right">
             <img src="/assets/images/home-section3-1.png" alt="OPTICAL">
             <h3 class="">OPTICAL</h3>
           </li>
-          <li class="card">
+          <li class="card" data-aos="zoom-in-down">
             <img src="/assets/images/home-section3-2.png" alt="SUNGLASSES">
             <h3 class="">SUNGLASSES</h3>
           </li>
-          <li class="card">
+          <li class="card" data-aos="zoom-in-left">
             <img src="/assets/images/home-section3-3.png" alt="FUNCTIONAL">
             <h3 class="">FUNCTIONAL</h3>
           </li>
@@ -81,14 +82,14 @@
       <div class="container py-80 py-sm-40">
         <h2>聯名設計鏡框</h2>
         <ul class="joint-list d-flex flex-direction-column-md gap-24-md">
-          <li class="card">
+          <li class="card" data-aos="fade-down-right">
             <picture>
               <source srcset="../assets/images/home-section4-1-sm.png" media="(max-width:576px)"/>
               <img src="/assets/images/home-section4-1.png" alt="YOUTH">
             </picture>
             <h3 class="card-title">DOUBLE A+</h3>
           </li>
-          <li class="card">
+          <li class="card" data-aos="fade-up-left">
             <picture>
               <source srcset="../assets/images/home-section4-2-sm.png" media="(max-width:576px)"/>
               <img src="/assets/images/home-section4-2.png" alt="YOUTH">
@@ -103,7 +104,8 @@
       <div class="container recommend py-80 py-sm-40">
         <h2 class="recommend-title">顧客推薦</h2>
         <ul class="recommend-list d-flex justify-content-space-between flex-wrap gap-24-md gap-16-sm">
-          <li class="recommend-card">
+          <li class="recommend-card" data-aos="fade-down"
+          data-aos-easing="linear">
             <img src="/assets/images/home-section5-1.png" alt="">
             <div class="card-pd d-flex flex-direction-column">
               <div class="card-content">
@@ -113,7 +115,9 @@
               <time datetime="2021-06-20" class="time">2021/06/20</time>
             </div>
           </li>
-          <li class="recommend-card">
+          <li class="recommend-card" data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-delay="200">
             <img src="/assets/images/home-section5-2.png" alt="">
             <div class="card-pd d-flex flex-direction-column">
               <div class="card-content">
@@ -123,7 +127,9 @@
               <time datetime="2021-04-18" class="time">2021/04/18</time>
             </div>
           </li>
-          <li class="recommend-card">
+          <li class="recommend-card" data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-delay="400">
             <img src="/assets/images/home-section5-3.png" alt="">
             <div class="card-pd d-flex flex-direction-column">
               <div class="card-content">
@@ -133,7 +139,9 @@
               <time datetime="2020-12-25" class="time">2020/12/25</time>
             </div>
           </li>
-          <li class="recommend-card">
+          <li class="recommend-card" data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-delay="600">
             <img src="/assets/images/home-section5-4.png" alt="">
             <div class="card-pd d-flex flex-direction-column">
               <div class="card-content">
@@ -148,7 +156,7 @@
     </section>
 
     <section class="bg-secondary">
-      <div class="contact container py-80 py-sm-40">
+      <div class="contact container py-80 py-sm-40" data-aos="zoom-in">
         <h2 class="contact-title">聯絡我們</h2>
         <p class="contact-p">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
         <form action="#">
@@ -180,6 +188,7 @@
     </section>
     <%- include('./layout/footer'); -%>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module" src="../main.js"></script>
   </body>
 </html>
