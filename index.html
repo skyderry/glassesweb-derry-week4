@@ -16,7 +16,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" />
-    <script type="module" crossorigin src="/glassesweb-derry-week4/assets/main-21a3882c.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script type="module" crossorigin src="/glassesweb-derry-week4/assets/main-8150b0a3.js"></script>
     <link rel="stylesheet" href="/glassesweb-derry-week4/assets/main-8ecb188f.css">
   </head>
   <body>
@@ -32,7 +33,7 @@
     </nav>
 </header>
     <section class="banner banner-header banner-sm-bg">
-      <div class="container title d-flex flex-direction-column align-items-flex-end justify-content-center">
+      <div class="container title d-flex flex-direction-column align-items-flex-end justify-content-center" data-aos="fade-left">
         <h3 class="title-h3 fz-sm-h3">Promise-Desert 2020 早春系列</h3>
         <h1 class="title-h1 fz-sm-h1">看得清，才能看得遠</h1>
         <div>
@@ -44,7 +45,7 @@
     <section class="serve-bg">
       <div class="serve container py-80 py-sm-40">
         <h2 class="serve-h2">用專業的心，做專業的事</h2>
-          <ul class="serve-link d-flex flex-wrap row" >
+          <ul class="serve-link d-flex flex-wrap row" data-aos="fade-down" >
             <li class="col-3 col-md-6 col-sm-12 card">
               <img class="card-img" src="data:image/png;base64,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" alt="price">
               <h4 class="card-h4">單一價格</h4>
@@ -73,15 +74,15 @@
       <div class="container classical py-80 py-sm-40">
         <h2>經典系列鏡框</h2>
         <ul class="classical-list d-flex flex-direction-column-md align-items-center-md">
-          <li class="card">
+          <li class="card" data-aos="zoom-in-right">
             <img src="/glassesweb-derry-week4/assets/home-section3-1-bb26ab65.png" alt="OPTICAL">
             <h3 class="">OPTICAL</h3>
           </li>
-          <li class="card">
+          <li class="card" data-aos="zoom-in-down">
             <img src="/glassesweb-derry-week4/assets/home-section3-2-38fdd6aa.png" alt="SUNGLASSES">
             <h3 class="">SUNGLASSES</h3>
           </li>
-          <li class="card">
+          <li class="card" data-aos="zoom-in-left">
             <img src="/glassesweb-derry-week4/assets/home-section3-3-52db7b9d.png" alt="FUNCTIONAL">
             <h3 class="">FUNCTIONAL</h3>
           </li>
@@ -93,14 +94,14 @@
       <div class="container py-80 py-sm-40">
         <h2>聯名設計鏡框</h2>
         <ul class="joint-list d-flex flex-direction-column-md gap-24-md">
-          <li class="card">
+          <li class="card" data-aos="fade-down-right">
             <picture>
               <source srcset="/glassesweb-derry-week4/assets/home-section4-1-sm-a801b136.png " media="(max-width:576px)"/>
               <img src="/glassesweb-derry-week4/assets/home-section4-1-59894574.png" alt="YOUTH">
             </picture>
             <h3 class="card-title">DOUBLE A+</h3>
           </li>
-          <li class="card">
+          <li class="card" data-aos="fade-up-left">
             <picture>
               <source srcset="/glassesweb-derry-week4/assets/home-section4-2-sm-2f57b61a.png " media="(max-width:576px)"/>
               <img src="/glassesweb-derry-week4/assets/home-section4-2-daaeb8bc.png" alt="YOUTH">
@@ -115,7 +116,8 @@
       <div class="container recommend py-80 py-sm-40">
         <h2 class="recommend-title">顧客推薦</h2>
         <ul class="recommend-list d-flex justify-content-space-between flex-wrap gap-24-md gap-16-sm">
-          <li class="recommend-card">
+          <li class="recommend-card" data-aos="fade-down"
+          data-aos-easing="linear">
             <img src="/glassesweb-derry-week4/assets/home-section5-1-75717951.png" alt="">
             <div class="card-pd d-flex flex-direction-column">
               <div class="card-content">
@@ -125,7 +127,9 @@
               <time datetime="2021-06-20" class="time">2021/06/20</time>
             </div>
           </li>
-          <li class="recommend-card">
+          <li class="recommend-card" data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-delay="200">
             <img src="/glassesweb-derry-week4/assets/home-section5-2-bf28c8b7.png" alt="">
             <div class="card-pd d-flex flex-direction-column">
               <div class="card-content">
@@ -135,7 +139,9 @@
               <time datetime="2021-04-18" class="time">2021/04/18</time>
             </div>
           </li>
-          <li class="recommend-card">
+          <li class="recommend-card" data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-delay="400">
             <img src="/glassesweb-derry-week4/assets/home-section5-3-978a0702.png" alt="">
             <div class="card-pd d-flex flex-direction-column">
               <div class="card-content">
@@ -145,7 +151,9 @@
               <time datetime="2020-12-25" class="time">2020/12/25</time>
             </div>
           </li>
-          <li class="recommend-card">
+          <li class="recommend-card" data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-delay="600">
             <img src="/glassesweb-derry-week4/assets/home-section5-4-cc3480ec.png" alt="">
             <div class="card-pd d-flex flex-direction-column">
               <div class="card-content">
@@ -160,7 +168,7 @@
     </section>
 
     <section class="bg-secondary">
-      <div class="contact container py-80 py-sm-40">
+      <div class="contact container py-80 py-sm-40" data-aos="zoom-in">
         <h2 class="contact-title">聯絡我們</h2>
         <p class="contact-p">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
         <form action="#">
@@ -219,6 +227,7 @@
         </div>
     </div>
 </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
   </body>
 </html>
